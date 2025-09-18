@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flexbox Demo</title>
+  <link rel="stylesheet"   href="Style-New.css">
+</head>
+<body>
+
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1 class="logo">MySite</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2 class="fade-in">Welcome to JOB Portal Application</h2>
+    <p class="fade-in">The Job Portal Application is a web-based platform designed to connect employers. The application aims to provide a user-friendly interface for job seekers to create profiles, search for jobs, and apply to relevant openings, while employers can post job openings, manage applications, and find suitable candidates.</p>
+   <a href="https://www.youtube.com"><button class="btn">Get Started</button></a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section hidden">
+    <h2>About Us</h2>
+    <p>
+      We create amazing websites with smooth animations, modern layouts,
+      and interactive designs.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section hidden">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">Web Design</div>
+      <div class="card">Development</div>
+      <div class="card">SEO</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section hidden">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+
+
+  <main class="page">
+    <aside class="sidebar" aria-label="Sidebar">
+      <h3>Menu</h3>
+      <nav>
+        <a href="#">Overview</a>
+        <a href="#">Activity</a>
+        <a href="#">Settings</a>
+        <a href="#">Billing</a>
+      </nav>
+    </aside>
+
+    <section class="main" aria-label="Main content">
+      <div id="id2">
+        <h2>Dashboard</h2>
+        <div id="id3">Welcome back — here's what's happening</div>
+      </div>
+
+      <!-- Row of flexible cards -->
+      <div class="card-row">
+        <article class="card">
+          <h4>Users</h4>
+          <p>Active users this week: <strong>1,248</strong></p>
+        </article>
+
+        <article class="card">
+          <h4>Revenue</h4>
+          <p>Revenue last 30 days: <strong>$12,420</strong></p>
+        </article>
+
+        <article class="card">
+          <h4>Tasks</h4>
+          <p>Open tasks: <strong>24</strong>. Tasks are distributed across your team and will reassign automatically when completed.</p>
+        </article>
+
+        <article class="card">
+          <h4>Notifications</h4>
+          <p>You have <strong>3</strong> new system alerts. Check the Activity tab for details.</p>
+        </article>
+      </div>
+
+      <!-- Example of a two-column inner flex area -->
+      <div id="id4">
+        <div id="id5">
+          <h4>Activity Feed</h4>
+          <p id="p4">Recent user actions and system events appear here. The box grows to take available space because of <code>flex: 2 1 360px</code>.</p>
+        </div>
+
+        <div id="id6">
+          <h4>Quick Links</h4>
+          <ul id="ul7">
+            <li>Invite teammates</li>
+            <li>Export data</li>
+            <li>Documentation</li>
+          </ul>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+  <div class="social-icons">
+    <a href="file:///E:/Html%20course/HTML%20Course/HTML%20Practice/HTML-Prac%20.html?#" target="_blank">🌐</a>
+    <a href="#" target="_blank">📘</a>
+    <a href="#" target="_blank">🐦</a>
+    <a href="#" target="_blank">📸</a>
+  </div>
+  <p>© <span id="year"></span> MySite. All rights reserved.</p>
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    
+    // small nicety:current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="Script-New.js"></script>
+
+</body>
+</html>

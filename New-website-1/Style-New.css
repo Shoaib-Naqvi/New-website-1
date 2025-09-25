@@ -1,0 +1,288 @@
+/* General Reset */
+* { box-sizing: border-box; margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  background: #f9f9f9;
+}
+
+/* Navbar */
+header {
+  background: linear-gradient(to right, #3758eb, #08cfb5);
+  color: #fff;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  justify-content: center;
+  transition: color 0.5s;
+}
+
+.nav-links a:hover {
+  color: #ff9800;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #667eea, #35ceb9);
+  color: #fff;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  animation: slideDown 1s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 25px;
+  background: #ff9800;
+  font-size: large;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: #e67e22;
+}
+
+/* Sections */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #35ceb9;
+  margin: 30px auto;
+  max-width: 1000px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #f1f1f1;
+  padding: 30px;
+  border-radius: 12px;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #667eea;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+    /* ===== Reset & base ===== */
+html,body { height: 100%; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#1f2937; background:#f8fafc; }
+
+    /* ===== Header / nav ===== */
+.site-header {
+      display: flex;
+      align-items: center;            /* vertical centering */
+      justify-content: space-between; /* logo left, nav right */
+      gap: 1rem;
+      padding: 1rem 1.5rem;
+      background: #0f172a;
+      color: white;
+    }
+h2{
+    font-size:1.35rem;
+}
+.logo { font-weight: 700; letter-spacing: 0.4px; }
+#p4{
+    color:#334155;
+}
+
+#id1{ display:flex; gap:1rem; align-items:center;
+}
+#id2{
+    display:flex; justify-content:space-between; align-items:center;
+}
+#id3{ 
+    font-size:0.95rem; color:#64748b;
+}
+#id4{
+    display:flex; gap:1rem; flex-wrap:wrap;
+}
+#id5{ 
+ flex: 2 1 360px; background:white; padding:1rem; border-radius:10px; box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+}
+#id6{
+    flex: 1 1 220px; background:white; padding:1rem; border-radius:10px; box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+}
+#ul7{
+    margin-top:.5rem; color:#334155;
+}
+
+.nav {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+.nav a {
+      color: rgba(255,255,255,0.9);
+      text-decoration: none;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+.nav a:hover { background: rgba(255,255,255,0.06); }
+
+    /* ===== Page layout: sidebar + main ===== */
+.page {
+      display: flex;
+      gap: 1.5rem;
+      padding: 1.5rem;
+      max-width: 1100px;
+      margin: 1.25rem auto;
+    }
+
+    /* Sidebar: fixed-ish width but flexible on small screens */
+.sidebar {
+      flex: 0 0 240px; /* don't grow, don't shrink (until media query), base 240px */
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+      height: fit-content;
+    }
+.sidebar h3 { margin-bottom: 0.75rem; font-size: 1.05rem; }
+.sidebar nav { display:flex; flex-direction: column; gap: 0.5rem; }
+.sidebar a { color:#0f172a; text-decoration:none; padding: 0.45rem; border-radius:6px; }
+.sidebar a:hover { background:#f1f5f9; }
+
+    /* Main: flexible column that grows */
+.main {
+      flex: 1 1 auto; /* grow to fill space */
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    /* A row of cards that wrap */
+.card-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap; /* wrap to new line if needed */
+    }
+.card {
+      flex: 1 1 220px; /* grow, shrink, base width 220px */
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+      min-width: 0; /* important for text ellipsis in flex children */
+    }
+.card h4 { margin-bottom: 0.5rem; }
+.card p { font-size: 0.95rem; color: #334155; line-height: 1.4; }
+
+    /* Footer */
+.site-footer {
+      margin-top: auto;
+      padding: 1rem 1.5rem;
+      text-align: center;
+      color: #475569;
+      font-size: 0.9rem;
+    }
+
+    /* ===== Utility & responsiveness ===== */
+.search {
+      display: flex;
+      gap: .5rem;
+      align-items: center;
+      background: rgba(255,255,255,0.06);
+      padding: 0.25rem 0.5rem;
+      border-radius: 8px;
+    }
+.search input {
+      border: none;
+      outline: none;
+      background: transparent;
+      color: white;
+      min-width: 140px;
+    }
+
+    /* Make layout stack on small screens */
+@media (max-width: 800px) {
+.page { flex-direction: column; padding: 1rem; }
+.sidebar { flex: 0 0 auto; width: 100%; }
+.card-row { gap: .75rem; }
+.nav { display: none; } /* hide nav for very small demo; normally you'd show a burger menu */
+    }
+
+
+
+/* Animations */
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

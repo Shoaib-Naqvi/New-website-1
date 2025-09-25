@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple AJAX Example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<h1>AJAX Example: Fetch Random User</h1>
+<button onclick="getJoke()">Get Joke</button>
+<p id="joke">Click the button to load the API's. </p>
+
+<h4>Even-Odd Arrange with Axios</h4>
+<button onclick="callArrangeAxios()">Arrange Numbers</button>
+<p id="outputAxios">Result will appear here...</p>
+
+  <script>
+    async function getJoke() {
+      let response = await fetch("https://official-joke-api.appspot.com/random_joke");
+      let data = await response.json();
+      document.getElementById("joke").innerText = data.setup + " - " + data.punchline;
+    }
+  </script>
+
+<button onclick="fetchUser()">Get Random User</button>
+<button onclick="fetchPost()">Get Random Post</button>
+<button onclick="fetchPosts()">Get Posts List</button>
+<button onclick="fetchNamazTimes()">Get Namaz Times (Islamabad)</button>
+<button onclick="fetchLocalFile()">Read Local File</button>
+<div id="result">Result will appear here...</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

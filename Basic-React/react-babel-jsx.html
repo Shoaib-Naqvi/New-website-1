@@ -4,43 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple HTML using React</title>
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/index.css"/>
   </head>
   <body>
     <h1>I am a super heading</h1>
     <div id="root">
       <h2>Hello, I am child of Root</h2>
     </div>
-    <h1>I am a super footer</h1>
+    <h1>I am a super footer.</h1>
     <script src="./react-lib/react.development.js"></script>
     <script src="./react-lib/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel">
-      const nestedElement = (
-        <div id="root">
-          <div id="parent">
-            <div id="child1">
-              <h1 style={{ color: "blue" }}>Hi, I'm Bob the Builder!</h1>
-              <h2>I can fix it!</h2>
+    <script type="text/babel"></script>
+    <script>
+const nestedElement = (
+  <div id="root1">
+    <div id="parent">
+      <div id="child1">
+        <h1 style={{ color: "blue" }}>Hi, I'm Bob the Builder!</h1>
+        <h2>I can fix it!</h2>
+      </div>
+    </div>
+  </div>
+);
+    <div id="child2">
+              <h3 style={{ color: "orange" }}>Hi, I'm Dora the Explorer!</h3>
+              <h4>Let's go exploring!</h4>
+              <div id="child3">
+              <h3 style={{ color: "Green" }}>Hi, I'm Bob the Builder!</h3>
+              <h4>I can fix it!</h4>
             </div>
-            <div id="child2">
-              <h1 style={{ color: "orange" }}>Hi, I'm Dora the Explorer!</h1>
-              <h2>Let's go exploring!</h2>
             </div>
-          </div>
-        </div>
-      );
-
       const NestedFunction = () => (
-        <div id="root">
+        <div id="root2">
           <div id="parent">
             <div id="child1">
-              <h1 style={{ color: "blue" }}>Hi, I'm Bob the Builder!</h1>
-              <h2>I can fix it!</h2>
+              <h3 style={{ color: "blue" }}>Hi, I'm Bob the Builder!</h3>
+              <h4>I can fix it!</h4>
             </div>
             <div id="child2">
-              <h1 style={{ color: "orange" }}>Hi, I'm Dora the Explorer!</h1>
-              <h2>Let's go exploring!</h2>
+              <h4 style={{ color: "orange" }}>Hi, I'm Dora the Explorer!</h4>
+              <h3>Let's go exploring!</h3>
+            </div>
+            <div id="child3">
+              <h4 style={{ color: "green" }}>Hi, I'm Shoaib  the full stack Developer!</h4>
+              <h3>I can fix it!</h3>
             </div>
           </div>
         </div>

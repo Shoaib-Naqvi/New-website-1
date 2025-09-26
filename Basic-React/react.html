@@ -42,9 +42,16 @@
 
   var items = ["Apple", "Banana", "Orange", "Grapes"];
 const Second_Element = React.createElement(
-        "item",
+        "items",
         { style: { color: "red" } },
-        items.map((item) => React.createElement("li", null, item))
+        items.map((items) => React.createElement("li", null, items))
+      );
+
+      var item = [Name, "Shoaib", Age, 24, Profession, "Full Stack Developer"];
+const Third_Element = React.createElement(
+        "item",
+        { style: { color: "black" } },
+        item.map((item) => React.createElement("li", null, item))
       );
       
       const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -55,6 +62,7 @@ const Second_Element = React.createElement(
           resultElement,
           First_Element,
           Second_Element,
+          Third_Element,
           Result_Element
         ])
       );

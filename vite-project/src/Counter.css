@@ -1,0 +1,28 @@
+#card{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(190, 93, 93, 0.918);
+    color: solid black;
+    font-family: Arial, sans-serif;
+}
+#card:hover {
+    color: rgb(21, 212, 21);
+    box-shadow: 0 8px 16px rgba(19, 22, 221, 0.897);
+    transform: translateY(-5px);
+    transition: all 0.5s backgroudrd-color 0.3s;
+}
+#card2{
+    color: solid black;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(165, 149, 149, 0.849);
+    font-family: Arial, sans-serif;
+}
+#card2:hover {
+    color: rgb(21, 212, 21);
+    box-shadow: 0 8px 16px #4417e7c7;
+    transform: translateY(-5px);
+    transition: all 0.5s backgroudrd-color 0.3s;
+}

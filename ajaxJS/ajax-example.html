@@ -22,12 +22,13 @@
       let data = await response.json();
       document.getElementById("joke").innerText = data.setup + " - " + data.punchline;
     }
+   
   </script>
 
 <button onclick="fetchUser()">Get Random User</button>
 <button onclick="fetchPost()">Get Random Post</button>
 <button onclick="fetchPosts()">Get Posts List</button>
-<button onclick="fetchNamazTimes()">Get Namaz Times (Islamabad)</button>
+<button onclick="fetchNamazTimes()">  Get Namaz Times (Islamabad)</button>
 <button onclick="fetchLocalFile()">Read Local File</button>
 <div id="result">Result will appear here...</div>
 

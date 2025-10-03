@@ -97,6 +97,36 @@ getJoke();
 
 
 
+
+import axios from 'axios';
+
+// Basic GET request
+function fetchWithAxios() {
+axios.get('https://jsonplaceholder.typicode.com/posts/1')
+  .then(response => {
+    console.log('GET Response Data:', response.data);
+  })
+  .catch(error => {
+    console.error('Error making GET request:', error);
+  });
+
+// GET request with query parameters
+axios.get('https://jsonplaceholder.typicode.com/posts', {
+    params: {
+      userId: 1,
+      _limit: 5 // Limit the number of results
+    }
+  })
+  .then(response => {
+    console.log('GET with Params Response Data:', response.data);
+  })
+  .catch(error => {
+    console.error('Error making GET request with params:', error);
+  });}
+
+
+
+
 //Using Axios to fetch() an API's. 
 
 function callArrangeAxios() {
